@@ -14,3 +14,4 @@ To run it type
 npm install
 npm run
 ```
+or open precompiled offline/index.html in your browser
