@@ -1,0 +1,278 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.compact.table > tbody > tr > * {
+  border: none;
+}
+
+.compact.table {
+  width: initial;
+}
+
+.instrument {
+  vertical-align: top;
+}
+
+.instrument table, table.settings {
+  margin-bottom: 0px;
+}
+
+.compact.table > tbody > tr > td > .checkbox {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.seq td {
+  padding: 5px;
+}
+
+.compact.panel {
+  display: inline-block;
+}
+
+.tight, .tight * {
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  float: left;
+}
+
+select.delay.form-control {
+  width: 70px;
+}
+
+select.delay.form-control:first-child {
+  width: 80px;
+}
+
+/*.seq > .panel-heading{
+	padding:1px;
+}*/
+.keyboard > svg > g:not(.upper) > rect:last-child {
+  display: none;
+}
+
+svg.envelope text {
+  fill-opacity: 0.3;
+  stroke-opacity: 0.4;
+  font-size: 100%;
+}
+
+svg.nosustain .sustain {
+  display: none;
+}
+
+tr.clocks td {
+  background-color: #f5f5f5;
+}
+
+tr.clock-top td:first-child {
+  border-top-left-radius: 9px;
+}
+
+tr.clock-top td:last-child {
+  border-top-right-radius: 9px;
+}
+
+tr.clock-bottom td:first-child {
+  border-bottom-left-radius: 9px;
+}
+
+tr.clock-bottom td:last-child {
+  border-bottom-right-radius: 9px;
+}
+
+.panel-default > .panel-heading {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.settings td:last-child {
+  width: 100px;
+}
+
+.k0 g#white rect:nth-child(1) {
+  fill: bisque !important;
+}
+
+.k2 g#white rect:nth-child(2) {
+  fill: bisque !important;
+}
+
+.k4 g#white rect:nth-child(3) {
+  fill: bisque !important;
+}
+
+.k5 g#white rect:nth-child(4) {
+  fill: bisque !important;
+}
+
+.k7 g#white rect:nth-child(5) {
+  fill: bisque !important;
+}
+
+.k9 g#white rect:nth-child(6) {
+  fill: bisque !important;
+}
+
+.k11 g#white rect:nth-child(7) {
+  fill: bisque !important;
+}
+
+.k1 g#black rect:nth-child(1) {
+  fill: dimgray !important;
+}
+
+.k3 g#black rect:nth-child(2) {
+  fill: dimgray !important;
+}
+
+.k6 g#black rect:nth-child(3) {
+  fill: dimgray !important;
+}
+
+.k8 g#black rect:nth-child(4) {
+  fill: dimgray !important;
+}
+
+.k10 g#black rect:nth-child(5) {
+  fill: dimgray !important;
+}
+
+g:not(.low1) > #low1 > text {
+  display: none;
+}
+
+g:not(.low2) > #low2 > text {
+  display: none;
+}
+
+g:not(.high1) > #high1 > text {
+  display: none;
+}
+
+g:not(.high2) > #high2 > text {
+  display: none;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/ */
+.right {
+  float: right;
+}
+
+div.panel-default > div.panel-heading {
+  font-weight: normal;
+  font-size: small;
+}
+
+th {
+  font-weight: normal;
+}
+
+/*$instr : #e6194b #3cb44b #000080 #f58231 #911eb4 #46f0f0;*/
+.instr1 .panel-heading, .instr1[role], .seq table td.instr1, .indi > .instr1 {
+  background-color: rgba(255, 248, 194, 0.3);
+}
+
+.instr2 .panel-heading, .instr2[role], .seq table td.instr2, .indi > .instr2 {
+  background-color: rgba(235, 255, 194, 0.3);
+}
+
+.instr3 .panel-heading, .instr3[role], .seq table td.instr3, .indi > .instr3 {
+  background-color: rgba(194, 249, 255, 0.3);
+}
+
+.instr4 .panel-heading, .instr4[role], .seq table td.instr4, .indi > .instr4 {
+  background-color: rgba(194, 216, 255, 0.3);
+}
+
+.instr5 .panel-heading, .instr5[role], .seq table td.instr5, .indi > .instr5 {
+  background-color: rgba(255, 194, 228, 0.3);
+}
+
+.instr6 .panel-heading, .instr6[role], .seq table td.instr6, .indi > .instr6 {
+  background-color: rgba(255, 201, 194, 0.3);
+}
+
+.indi {
+  line-height: 1px;
+}
+
+.nav > li:first-child > a {
+  padding: 15px 0 0 0;
+}
+
+.indi > span {
+  background-color: gray;
+  margin: 2px 0px;
+  height: 10px;
+  width: 10px;
+  border: 1px solid rgb(248, 248, 248);
+  display: inline-block;
+}
+
+[role=presentation] {
+  border-color: #f8f8f8;
+  border-radius: 18px;
+}
+
+.seq td:nth-child(4n) {
+  background-color: lightgray;
+}
+
+.seq td {
+  width: 34px;
+}
+
+#fileinput {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#beforerun{
+    position: absolute;
+    margin: auto;
+    background: white;
+    z-index: 999;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+#beforerun h3{
+    text-align: center;
+}
+
+/*# sourceMappingURL=App.css.map */

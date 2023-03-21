@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">-->
+	<link rel="stylesheet" type="text/css" href="App.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <lin k rel="shortcut icon" href="%PUBLIC_URL%/fav3icon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>test</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+	<div id="beforerun">
+	<div id="help">That's a tool for desiging a <a href="https://en.wikipedia.org/wiki/POKEY" target="_blank">POKEY</a>-like chip specs. The chip has a master clock that is divided into (you set how many) derived clocks
+ that drive the counters that switch the output level between zero and a selected volume level. Tune the counters number and width for the notes, 
+<a href="https://en.wikipedia.org/wiki/Linear-feedback_shift_register#Applications" target="_blank">LFSR</a> params for the noise and play some music to check if it sounds fine. The only significant feature here that is absent in POKEY is that you can
+ pair channels so that one channel counter is initialized from alternating channels, effectively performing <a href="https://en.wikipedia.org/wiki/Pulse-width_modulation#Audio_effects_and_amplification" target="_blank">PWM</a>. The volume/frequency envelopes that can be edited 
+for each instrument are processed every <a href="https://en.wikipedia.org/wiki/Vertical_blanking_interval" target="_blank">vblank</a>. If you have MIDI keyboard (or two!) and your browser supports it you can use it here.
+<br>
+<br>
+Use Ctrl and Shift to choose an octave for the keyboard. Instruments 1-2 are mapped to midi keyboards / computer keyboard, 
+instruments 4-6 are mapped to Insert, Home and PageUp keys (use them as percussion).
+<br>
+Click an area header to fold the area back. Click the green dot to undo a corresponding instrument edit (if the dot is red there are no undo steps left).
+To swap instrument settings click a number on the instrument header.
+</div><h3>Click me</h3></div>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

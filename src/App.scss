@@ -1,0 +1,217 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.compact.table > tbody > tr > *{
+	border: none;
+}
+.compact.table{
+	width:initial;
+}
+.instrument{
+	vertical-align:top;
+}
+[header]{
+	margin: 10px;
+}
+.instrument table, table.settings  {
+	margin-bottom: 0px;
+}
+.card-title {
+	padding: 7px;
+}
+.compact.table > tbody > tr > td > .checkbox{
+	display:inline-block;
+	padding-right:15px;
+}
+.seq  td {
+	padding:5px;
+}
+.compact.panel{
+	display:inline-block;
+}
+.tight, .tight * {
+	margin:0;
+	padding:0;
+}
+.left{
+	float:left;
+}
+select.delay.form-control{
+	width:70px;
+}
+select.delay.form-control:first-child{
+	width:80px;
+}
+/*.seq > .panel-heading{
+	padding:1px;
+}*/
+.keyboard > svg > g:not(.upper) > rect:last-child{
+	display:none;
+}
+svg.envelope text{
+	fill-opacity: 0.3;
+    stroke-opacity: 0.4;
+    font-size: 100%;
+}
+svg.nosustain .sustain{display:none}
+	
+tr.clocks td {background-color:#f5f5f5;}
+
+$clockrad : 9px;
+tr.clock-top td:first-child{border-top-left-radius: $clockrad}
+tr.clock-top td:last-child{border-top-right-radius: $clockrad}
+tr.clock-bottom td:first-child{border-bottom-left-radius: $clockrad}
+tr.clock-bottom td:last-child{border-bottom-right-radius: $clockrad}
+
+.panel-default>.panel-heading {
+	font-weight:bold;
+	font-size:larger;
+}
+
+.settings td:last-child{
+	width:100px;
+}
+
+$white : 0 2 4 5 7 9 11;
+$black : 1 3 6 8 10;
+@for $i from 1 through 7 {
+  .k#{nth($white, $i)} g#white rect:nth-child(#{$i}) { fill: bisque !important }
+}
+@for $i from 1 through 5 {
+  .k#{nth($black, $i)} g#black rect:nth-child(#{$i}) { fill: dimgray !important }
+}
+
+
+g:not(.low1) > #low1 > text { display:none;}
+g:not(.low2) > #low2 > text { display:none;}
+g:not(.high1) > #high1 > text { display:none;}
+g:not(.high2) > #high2 > text { display:none;}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/ */
+
+.right { float:right;}
+
+div.panel-default > div.panel-heading { font-weight: normal; font-size:small; }
+th{ font-weight: normal }
+$instr : rgba(#FFF8C2,1) rgba(#EBFFC2, 1) rgba(#C2F9FF, 1) rgba(#C2D8FF, 1) rgba(#FFC2E4, 1) rgba(#FFC9C2, 1);
+/*$instr : #e6194b #3cb44b #000080 #f58231 #911eb4 #46f0f0;*/
+@for $i from 1 through 6 {
+	.instr-#{$i}.navbar-brand, .instr-#{$i} > .card-title, .seq table td.instr#{$i}, .indi > .instr#{$i}   {	background-color: #{nth($instr, $i)};	}
+}
+[class|=instr].navbar-brand{
+    border-radius: 10px;
+    padding: 5px;
+}
+.indi {
+    line-height: 1px;
+}
+.nav > li:first-child > a{
+	padding: 15px 0 0 0;
+}
+.indi > span{
+	background-color: gray;
+	margin: 2px 0px;
+	height: 10px;
+    width: 10px;
+	border: 1px solid rgb(248, 248, 248);
+    display: inline-block;
+}
+[role=presentation] {
+    border-color: #f8f8f8;
+    border-radius: 18px;
+}
+.seq td:nth-child(4n){
+	background-color:lightgray
+}
+.seq td{
+	width:34px;
+}
+#fileinput{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+#beforerun{
+    position: absolute;
+    margin: auto;
+    background: white;
+    z-index: 999;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+#beforerun h3{
+    text-align: center;
+}
+.loader{
+    position: relative;
+}
+.instrument > .card-title > .btn-toolbar{
+	zoom: 0.6;
+}
+.navbar-nav{
+	flex-wrap: wrap;
+}
+.input-group{
+	flex-wrap: nowrap !important;
+}
+[header=Oscillators] td > div{
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 8px;
+}
+.compact.card, .instrument{
+	margin: 10px;
+}
+.use-clock{
+	display: flex;
+	padding-top: 16px !important;
+	padding-bottom: 12px !important;
+}
+.use-clock > .form-check{
+	margin-right: 5px;
+}
+.form-label {
+	margin-left: 8px;
+}
+/*.keyboard {
+	display: flex;
+	height: 6.25vw;
+}
+.keyboard > svg{
+	height: 6.25vw;
+
+}*/
+.octave{
+	height:6.26vw;
+	width: 11.11vw;
+}
+.pwm{
+	padding-top: 8px;
+}
