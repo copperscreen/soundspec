@@ -4,7 +4,7 @@ export function range2(start,len){return range(len).map(_ => _+start);}
 export function clone(_){ return _?JSON.parse(JSON.stringify(_)):_;}
 export function clone2(arr){ return arr.map( _ => _.slice());}
 export function note2freq(note){return 440 * (2 ** ((note /* - 49*/ )/12));}
-export function scaleNotePoint(point){ return (point-50)/10;};
+export function scaleNotePoint(point){ return (point-50)/50;};
 export function clamp(min,x,max){ return Math.max(min,Math.min(max,x));};
 export function lerp( start, end, x){
 	var dx = (x - start.X) / (end.X - start.X);
