@@ -16,6 +16,7 @@
 
 .compact.table > tbody > tr > * {
   border: none;
+  vertical-align: middle;
 }
 
 .compact.table {
